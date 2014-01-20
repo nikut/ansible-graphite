@@ -2,10 +2,13 @@
 
 - name: graphite
   hosts: graphite
-  user: root
+  user: '{{ ssh_user }}'
+  vars:
+    ssh_user: root
+
 
   roles:
-    - roles/centos
-    - roles/httpd
-    - roles/graphite
-    - roles/statsd
+    #- roles/centos
+    #- roles/httpd
+    #- roles/graphite
+    #- roles/statsd
