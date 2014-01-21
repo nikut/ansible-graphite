@@ -1,0 +1,6 @@
+---
+
+graphite_pkgs:
+  - python-pysqlite2
+  - python-pip
+  - sqlite3

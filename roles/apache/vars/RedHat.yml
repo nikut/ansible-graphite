@@ -1,0 +1,5 @@
+---
+
+apache_pkgs:
+  - httpd
+  - mod_wsgi

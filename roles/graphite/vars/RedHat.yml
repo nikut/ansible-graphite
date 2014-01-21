@@ -1,0 +1,8 @@
+---
+
+graphite_pkgs:
+- sqlite
+- bitmap 
+- bitmap-fonts
+- python-sqlite2
+- pycairo
