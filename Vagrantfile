@@ -6,7 +6,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "ubuntu-13.10"
+  config.vm.box = "ubuntu-13.04"
   config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/raring/current/raring-server-cloudimg-amd64-vagrant-disk1.box"
 
   # Create a forwarded port mapping which allows access to a specific port
@@ -43,6 +43,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ansible.inventory_path = "hosts"
     ansible.host_key_checking = false
     ansible.extra_vars = { ssh_user: 'vagrant' }
+    ansible.tags = 'debian'
   end
 
 

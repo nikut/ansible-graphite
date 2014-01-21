@@ -3,12 +3,13 @@
 - name: graphite
   hosts: graphite
   user: '{{ ssh_user }}'
+  sudo: true
   vars:
     ssh_user: root
 
 
   roles:
     #- roles/centos
-    #- roles/httpd
-    #- roles/graphite
+    - roles/apache
+    - roles/graphite
     #- roles/statsd
