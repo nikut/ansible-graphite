@@ -4,10 +4,9 @@
   yum: "name={{ item }} state=present"
   with_items:
     - sqlite
-# Testing
 #    - bitmap 
 #    - bitmap-fonts
-    - python-sqlite2
+    - python-sqlite
     - pycairo
 
 
