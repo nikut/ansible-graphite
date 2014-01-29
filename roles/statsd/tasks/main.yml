@@ -1,7 +1,7 @@
 ---
 
 - name: Install Nodejs
-  yum: "name={{ item }} state=present"
+  yum: name={{ item }} state=present enablerepo=epel
   with_items:
     - nodejs
     - git

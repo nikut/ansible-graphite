@@ -1,11 +1,11 @@
 ---
 
 - name: Install Graphite Dependencies
-  yum: "name={{ item }} state=present"
+  yum: name={{ item }} state=present enablerepo=epel
   with_items:
     - sqlite
-#    - bitmap 
-#    - bitmap-fonts
+    - bitmap 
+    - bitmap-fonts
     - python-sqlite
     - pycairo
 
