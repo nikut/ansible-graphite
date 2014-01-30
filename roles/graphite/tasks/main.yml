@@ -8,6 +8,7 @@
     - bitmap-fonts
     - python-sqlite2
     - pycairo
+    - python-ldap
   when: ansible_distribution == "CentOS" or ansible_distribution == "Red Hat Enterprise Linux"
 
 
@@ -18,6 +19,7 @@
     - bitmap 
     - python-sqlite
     - pycairo
+    - python-ldap
   when: ansible_distribution == "Amazon"
 
 
